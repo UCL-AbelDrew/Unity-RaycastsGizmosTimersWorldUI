@@ -8,10 +8,7 @@ public class Lookat : MonoBehaviour
     private MathsHelpers m_mathHelper = new MathsHelpers();
     private void Update()
     {
-
-        Vector3 direction = m_target.transform.position.normalized;
-
-        transform.LookAt(direction * Time.deltaTime, Vector3.up);
+        transform.LookAt(m_target.transform.position, Vector3.up);
     }
     
 }
