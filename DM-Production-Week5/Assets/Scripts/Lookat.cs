@@ -5,9 +5,13 @@ using UnityEngine;
 public class Lookat : MonoBehaviour
 {
     public GameObject m_target;
+    private MathsHelpers m_mathHelper = new MathsHelpers();
     private void Update()
     {
-        transform.LookAt(m_target.transform.position, Vector3.up);
+
+        Vector3 direction = m_target.transform.position.normalized;
+
+        transform.LookAt(direction * Time.deltaTime, Vector3.up);
     }
     
 }
