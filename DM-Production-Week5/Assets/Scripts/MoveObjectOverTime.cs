@@ -6,9 +6,9 @@ public enum MoveType { PLAYONCE, LOOP, PINGPONG};
 public class MoveObjectOverTime : MonoBehaviour
 {
     [SerializeField]
-    private MoveType m_moveType;
+    private MoveType m_moveType = MoveType.PLAYONCE;
     [SerializeField]
-    private WayPointSet m_wayPointSet;
+    private WayPointSet m_wayPointSet = null;
     public float m_maxSpeed;
     private bool m_moving;
     [SerializeField]
@@ -23,7 +23,7 @@ public class MoveObjectOverTime : MonoBehaviour
     private bool m_playReverse;
 
     [SerializeField]
-    private float m_epsilon;
+    private float m_epsilon = 0.001f;
 
 
     private void Start()

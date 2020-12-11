@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\EconomyWithEvent.cs" />
     <Compile Include="Assets\Scripts\EventReceiver.cs" />
     <Compile Include="Assets\Scripts\EventWhenObjectReachesPosition.cs" />
+    <Compile Include="Assets\Scripts\LinerRenderedWayPoints.cs" />
     <Compile Include="Assets\Scripts\Lookat.cs" />
     <Compile Include="Assets\Scripts\MathsHelpers.cs" />
     <Compile Include="Assets\Scripts\ModifyEconomy.cs" />

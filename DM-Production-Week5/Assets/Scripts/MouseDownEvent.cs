@@ -12,7 +12,7 @@ public class OnClick : UnityEvent<GameObject> { }
 public class MouseDownEvent : MonoBehaviour
 {
     [SerializeField]
-    private OnClick m_onClickEvent;
+    private OnClick m_onClickEvent = null;
 
     public GameObject m_player;
     public float m_clickDistance = 2f;

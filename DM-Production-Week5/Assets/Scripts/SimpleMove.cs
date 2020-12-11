@@ -6,11 +6,11 @@ public class SimpleMove : MonoBehaviour
 {
     private Vector3 m_direction;
     [SerializeField]
-    private GameObject m_targetObject;
+    private GameObject m_targetObject = null;
     [SerializeField]
-    private float m_speed;
+    private float m_speed = 1f;
     [SerializeField]
-    private AnimationCurve m_speedCurve;
+    private AnimationCurve m_speedCurve = new AnimationCurve(new Keyframe(0, 1), new Keyframe(1, 1));
     private float m_speedCurveValue;
 
     private float m_targetDistance;

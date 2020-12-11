@@ -7,9 +7,9 @@ public class UIImageFillTimerInterface : MonoBehaviour
 {
     private MathsHelpers m_mathsHelper;
     [SerializeField]
-    private Timer m_timer;
+    private Timer m_timer = null;
 
-    private Image m_fillImage;
+    private Image m_fillImage = null;
 
     private void Start()
     {

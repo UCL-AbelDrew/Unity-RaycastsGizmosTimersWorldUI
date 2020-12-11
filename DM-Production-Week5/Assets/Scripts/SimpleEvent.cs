@@ -13,7 +13,7 @@ public class SimpleEvent : MonoBehaviour
 {
     public GameObject m_overrideObjectToSend;
     [SerializeField]
-    private GameObjectEvent m_gameObjectEvent;
+    private GameObjectEvent m_gameObjectEvent = null;
     public void ActivateEvent(GameObject other = null) {
         if (!other)
         {

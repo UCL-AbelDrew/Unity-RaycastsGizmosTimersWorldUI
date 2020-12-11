@@ -6,7 +6,7 @@ public enum GizmoType { SPHERE, CUBE, RAY};
 public class DisplayGizmo : MonoBehaviour
 {
     [SerializeField]
-    private GizmoType m_gizmoType;
+    private GizmoType m_gizmoType = GizmoType.SPHERE;
     [SerializeField]
     private bool m_onlyDrawWhenSelected = false;
     [SerializeField]
